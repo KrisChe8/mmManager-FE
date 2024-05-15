@@ -1,0 +1,89 @@
+.section-title {
+  margin: 2.2rem auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.timeBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 1rem auto;
+  list-style-type: none;
+}
+.timeBlock li {
+  cursor: pointer;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  font-size: 1.2rem;
+}
+.timeBlock li input,
+.timeBlock li label {
+  cursor: pointer;
+}
+.timeBlock li:has(input:checked) {
+  border-bottom: 2px solid #2dae81;
+}
+.timeBlock li:has(input:checked) label {
+  color: #2dae81;
+  font-weight: 600;
+}
+.timeBlock li input {
+  width: 0;
+}
+.showMoney-wrapper {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+
+  gap: 6rem;
+  padding: 1.5rem;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+}
+.income-wrapper ul,
+.expenses-wrapper ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.income-wrapper ul li,
+.expenses-wrapper ul li {
+  margin-bottom: 0.8rem;
+}
+.showMoney-title {
+  font-weight: 700;
+}
+.symbol,
+.symbol-red {
+  margin-right: 0.6rem;
+  color: green;
+}
+.symbol-red {
+  color: red;
+}
+.pie {
+  height: 30rem;
+}
+@media screen and (max-width: 490px) {
+  .showMoney-wrapper {
+    width: 86%;
+    gap: 4rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .showMoney-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .section-title {
+    font-size: 1.1rem;
+  }
+  .pie > div {
+    width: 86%;
+    margin: 0 auto;
+  }
+}

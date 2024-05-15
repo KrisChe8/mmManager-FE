@@ -1,0 +1,140 @@
+.signup {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.signForm-wrapper {
+  background-color: #54c9a1;
+  width: 500px;
+  height: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 1rem;
+
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+}
+.signForm-wrapper form {
+  width: 100%;
+  /* background-color: #90dcc2; */
+  background-color: #cbefe3;
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.signTitle {
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.signList {
+  list-style-type: none;
+  width: 100%;
+}
+.signList li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.signLabel {
+  text-align: center;
+  margin: 1.2rem auto 0.4rem;
+}
+.signInput {
+  padding: 0.5rem;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: -5px 5px 10px 3px #d6e1e4;
+}
+.signBtn {
+  display: block;
+  margin: 2rem auto;
+  width: 30%;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  /* background-color: #3dc295; */
+  background-color: #fff;
+  color: #54c9a1;
+  font-weight: 600;
+  border: none;
+  transition: all 1s;
+}
+.signBtn:hover {
+  background-color: #3dc295;
+  color: #fff;
+}
+
+.pass-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 0.8rem;
+}
+.passInput {
+  margin-right: 0;
+  margin-left: 0;
+}
+.iconPass {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  display: none;
+}
+.active-icon {
+  display: inline-block;
+}
+.successSignupMsg {
+  text-align: center;
+  margin-top: 0.9rem;
+}
+.switchSignInLink {
+  cursor: pointer;
+  margin-left: 0.6rem;
+  font-weight: 600;
+  color: #077522;
+}
+
+.loginForm-wrapper {
+  height: 320px;
+}
+.loginBtn {
+  margin-top: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+/* signuoManager */
+.switchForms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 8rem;
+}
+.linktoForm {
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #000;
+}
+.linkwrapper:has(.signClass-active) {
+  border-bottom: 2px solid #3ac599;
+}
+
+/* Header */
+.loginForm-header {
+  background-color: #5da28f;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

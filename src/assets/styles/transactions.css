@@ -1,0 +1,103 @@
+.transaction-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+.transaction-wrapper {
+  width: 75%;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+}
+.transaction-list {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+.transaction-list li {
+  width: 100%;
+  /* border: 1px solid green; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+.date {
+  /* background-color: #bfe5c4; */
+  /* background-color: #e6faf4; */
+  background-color: #98f1d5;
+  font-size: 1.1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+/* .transaction-list li:nth-child(2n) {
+  background-color: #eaeae7;
+} */
+/* .transaction-list li:nth-child(2n) .date {
+  background-color: #eaeae7;
+} */
+/* .details-wrapper {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+.details-wrapper h5 {
+  margin-right: 1rem;
+} */
+.incomeClassTrans {
+  color: #219622;
+}
+.expensesClassTrans {
+  color: #a31d2e;
+}
+.transactionTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.timeValueRadio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.radiobtn + label {
+  margin-right: 1.5rem;
+}
+.radiobtn {
+  margin-right: 0.3rem;
+}
+.timeValueRadio label {
+  cursor: pointer;
+}
+
+.radiobtn:checked {
+  accent-color: #38c78a;
+  border: none;
+}
+
+.nothingShowMsg {
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (max-width: 402px) {
+  .transaction-section {
+    margin-top: 2rem;
+  }
+  .transactionTitle {
+    font-size: 1.1rem;
+  }
+  .date {
+    font-size: 1rem;
+  }
+  .details-wrapper h5,
+  .details-wrapper p {
+    font-size: 0.9rem;
+  }
+  .incomeClassTrans {
+    font-size: 0.9rem;
+  }
+}

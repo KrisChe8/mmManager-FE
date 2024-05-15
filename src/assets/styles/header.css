@@ -1,0 +1,238 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  /* border: 1px solid red; */
+  height: 150px;
+  box-shadow: 0 1px 25px -7px #babecc;
+}
+.left-side {
+  padding-left: 3rem;
+}
+.right-side {
+  padding-right: 3rem;
+}
+.mainLogo1 {
+  display: flex;
+  align-items: center;
+}
+.companyName {
+  margin-right: 4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.mainLogo {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+.activeUser {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  background-color: #5da28f;
+  color: #fff;
+}
+
+.navmenu {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  align-items: center;
+}
+.navmenu__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-size: 1.4rem;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.7s ease;
+  font-size: 1.1rem;
+}
+.nav-link:hover {
+  color: #d1b607;
+}
+.sign-out:hover {
+  color: #fa7773;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.menu-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.bar,
+.bar::before,
+.bar::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.bar::before {
+  transform: translateY(-5px);
+}
+.bar::after {
+  transform: translateY(5px);
+}
+.menu-btn_active .bar::before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+
+.menu-btn_active .bar::after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.item-headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-headerContent {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.value-headerContent {
+  font-weight: 600;
+}
+.incomeMain .value-headerContent {
+  color: #508c5e;
+}
+.expensesMain .value-headerContent {
+  color: #ed1c12;
+}
+
+@media screen and (max-width: 957px) {
+  .hamburger {
+    display: block;
+  }
+  .navmenu__list {
+    position: fixed;
+    left: -100%;
+    top: 146px;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.8s;
+    background: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
+  }
+  .nav-item {
+    transition: 0.6 ease;
+    width: 100%;
+  }
+  .nav-item:hover {
+    background: linear-gradient(90deg, #4ac29a 0%, #bdfff3 100%);
+
+    color: #000;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .nav-link {
+    padding: 16px 0;
+    color: #000;
+    min-width: 100%;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .navmenu__list-active {
+    left: 0;
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .companyName {
+    margin-right: 3rem;
+    font-size: 1rem;
+  }
+  .left-side {
+    padding-left: 1rem;
+  }
+  .activeUser {
+    font-size: 1rem;
+  }
+  .headerContent {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  .title-headerContent {
+    font-size: 0.8rem;
+  }
+  .value-headerContent {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 358px) {
+  .companyName {
+    margin-right: 2rem;
+  }
+  .mainLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .companyName {
+    margin-right: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .activeUser {
+    font-size: 0.8rem;
+  }
+  .title-headerContent {
+    font-size: 0.7rem;
+  }
+  .value-headerContent {
+    font-size: 0.7rem;
+  }
+  .header {
+    height: 120px;
+  }
+  .navigationBar {
+    height: 46%;
+  }
+  .navmenu__list {
+    top: 121px;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
