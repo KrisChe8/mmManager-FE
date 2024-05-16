@@ -52,9 +52,13 @@ function Signup() {
         setLastN("");
         setEmail("");
         setPassword("");
+        setError("");
       })
       .catch((err) => {
         setError(err.response.data.message);
+        if (err.response.status === 406) {
+          setError("User already exist! Please Login");
+        }
         console.log(err, "<<<<<err");
       });
   };
@@ -138,7 +142,7 @@ function Signup() {
             <p>Loading ...</p>
           ) : (
             <>
-              {/* {error ? <p>{error}</p> : <p>{response}</p>} */}
+              {error ? <p className="successSignupMsg">{error}</p> : null}
               {success ? (
                 <p className="successSignupMsg">
                   Thank you for joining!
