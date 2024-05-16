@@ -51,7 +51,7 @@ function SignIn() {
           setEmailUser("");
           setPasswordUser("");
           setErrorMsg("");
-          navigate("/home");
+          navigate("/app/home");
         } else {
           setMatchUser(false);
           setPasswordUser("");

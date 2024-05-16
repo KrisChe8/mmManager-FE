@@ -43,16 +43,10 @@ function Budget({ idUser }) {
         cashIncome = 0;
         investmentIncome = 0;
         savingsIncome = 0;
+        console.log("404");
       } else if (response.status === 200) {
         setAllIncome(response.data.totalIncome);
       }
-      //   else {
-      // totalIncomeByChosenTime = 0;
-      // cardIncome = 0;
-      // cashIncome = 0;
-      // investmentIncome = 0;
-      // savingsIncome = 0;
-      //   }
     });
     getTotalExpensesByTime(chosenTime, id).then((response) => {
       if (!response.status) {
@@ -72,8 +66,6 @@ function Budget({ idUser }) {
       } else if (response.status === 200) {
         setAllExpenses(response.data.totalExpenses);
       }
-      //   else {
-      //   }
     });
   }, [chosenTime]);
 
@@ -233,7 +225,6 @@ function Budget({ idUser }) {
                 <div
                   style={{
                     fontSize: "12px",
-                    //   color: `${point.color}`,
                   }}
                 >
                   {point.value}

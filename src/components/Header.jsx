@@ -65,23 +65,23 @@ function Header({ totalExpensesArr, totalIncomeArr }) {
               </div>
               <ul className={`navmenu__list ${activeDropdownmenu}`}>
                 <li className="nav-item" onClick={closeDropdown}>
-                  <Link className="nav-link" to="/home">
+                  <Link className="nav-link" to="/app/home">
                     Home
                   </Link>
                 </li>
 
                 <li className="nav-item" onClick={closeDropdown}>
-                  <Link className="nav-link" to="/analysis">
+                  <Link className="nav-link" to="/app/my/analysis">
                     Analysis
                   </Link>
                 </li>
                 <li className="nav-item" onClick={closeDropdown}>
-                  <Link className="nav-link" to="/budget">
+                  <Link className="nav-link" to="/app/my/budget">
                     Budgets
                   </Link>
                 </li>
                 <li className="nav-item" onClick={closeDropdown}>
-                  <Link className="nav-link" to="/transactions">
+                  <Link className="nav-link" to="/app/my/transactions">
                     Transactions
                   </Link>
                 </li>

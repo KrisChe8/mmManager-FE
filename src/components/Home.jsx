@@ -21,7 +21,7 @@ function Home({ setRerenderIncome, rerenderIncome }) {
   return (
     <main className="home-wrapper">
       <div className="add-home-btn">
-        <Link className="switcherLink" to="/home/addexpenses">
+        <Link className="switcherLink" to="/app/home/addexpenses">
           <div
             className={`addExpenses homebtn ${activeClassExpenses}`}
             onClick={changeaddExpensesClass}
@@ -29,7 +29,7 @@ function Home({ setRerenderIncome, rerenderIncome }) {
             <p className="btn-name"> Add Expenses</p>
           </div>
         </Link>
-        <Link className="switcherLink" to="/home">
+        <Link className="switcherLink" to="/app/home">
           <div
             className={`addIncome homebtn ${activeClassIncome}`}
             onClick={changeaddIncomeClass}

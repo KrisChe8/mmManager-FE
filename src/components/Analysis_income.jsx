@@ -48,7 +48,7 @@ function IncomeAnalysis() {
           >
             <Link
               className="switcher-link "
-              to="/analysis/income-analysis/today"
+              to="/app/my/analysis/income-analysis/today"
             >
               {" "}
               Today
@@ -58,7 +58,10 @@ function IncomeAnalysis() {
             className={`switcher-time-item ${weekClass}`}
             onClick={switchWeekClass}
           >
-            <Link className="switcher-link" to="/analysis/income-analysis/week">
+            <Link
+              className="switcher-link"
+              to="/app/my/analysis/income-analysis/week"
+            >
               {" "}
               Week{" "}
             </Link>
@@ -70,7 +73,7 @@ function IncomeAnalysis() {
           >
             <Link
               className="switcher-link"
-              to="/analysis/income-analysis/month"
+              to="/app/my/analysis/income-analysis/month"
             >
               {" "}
               Month
@@ -80,7 +83,10 @@ function IncomeAnalysis() {
             className={`switcher-time-item ${yearClass}`}
             onClick={switchYearClass}
           >
-            <Link className="switcher-link" to="/analysis/income-analysis/year">
+            <Link
+              className="switcher-link"
+              to="/app/my/analysis/income-analysis/year"
+            >
               {" "}
               Year
             </Link>

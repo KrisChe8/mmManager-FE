@@ -185,7 +185,7 @@ function AddIncome({ setRerenderIncome, rerenderIncome }) {
           </div>
           <div className="amountInput-wrapper">
             <label htmlFor="amountInc">Enter Amount in £:</label>
-            {/* <input type="text" id="amountInc" className="amount" placeholder="100.50"/> */}
+
             <CurrencyInput
               id="amountInc"
               className="amount"

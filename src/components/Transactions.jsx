@@ -9,7 +9,6 @@ function Transactions() {
   const [msg, setMsg] = useState();
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
 
-  //   const id = 1;
   let time = "month";
 
   useEffect(() => {
@@ -57,8 +56,6 @@ function Transactions() {
     <section className="transaction-section">
       <h1 className="transactionTitle">All my Transactions:</h1>
 
-      {/* <form action="">
-        <div className="timeValueRadio"> */}
       <ul className="timeBlock">
         <li>
           <input
@@ -109,8 +106,7 @@ function Transactions() {
           <label htmlFor="year">Year</label>
         </li>
       </ul>
-      {/* </div>
-      </form> */}
+
       {msg ? (
         <p className="nothingShowMsg">{msg}</p>
       ) : (
