@@ -40,14 +40,14 @@ function SignIn() {
         //   password: response.password,
         // };
         setUserData(response);
-      })
-      .then(() => {
         let realPass = userData.password;
-        setLoggedInUser([]);
-        if (realPass === passwordUser) {
+        // setLoggedInUser([]);
+
+        if (response.password === passwordUser) {
           setMatchUser(true);
-          setLoggedInUser(userData);
-          localStorage.setItem("user", JSON.stringify(userData));
+          setLoggedInUser(response);
+
+          localStorage.setItem("user", JSON.stringify(response));
           setEmailUser("");
           setPasswordUser("");
           setErrorMsg("");
@@ -57,13 +57,18 @@ function SignIn() {
           setPasswordUser("");
           setErrorMsg("Oooops...Email or Password are wrong! Try again!");
         }
+      })
+      .catch((err) => {
+        setMatchUser(false);
+        setPasswordUser("");
+        setErrorMsg("Oooops...Email or Password are wrong! Try again!");
       });
   };
 
   return (
     <section className="signup">
       <div className="signForm-wrapper loginForm-wrapper">
-        <h1 className="signTitle">Welcome Back! Please Sign In!</h1>
+        <h1 className="signTitle loginTitle">Welcome Back! Please Sign In!</h1>
         <form onSubmit={LogInUserHandler}>
           <ul className="signList">
             <li>

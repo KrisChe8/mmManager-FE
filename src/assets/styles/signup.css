@@ -138,3 +138,37 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 550px) {
+  .signForm-wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .signInput {
+    width: 60%;
+  }
+  .signTitle {
+    margin: 1.5rem auto;
+  }
+  .signForm-wrapper {
+    height: 470px;
+  }
+  .switchForms {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .signInput {
+    width: 68%;
+  }
+  .linktoForm {
+    font-size: 1.1rem;
+  }
+  .loginForm-wrapper {
+    height: 310px;
+  }
+  .loginTitle {
+    font-size: 1.1rem;
+  }
+}

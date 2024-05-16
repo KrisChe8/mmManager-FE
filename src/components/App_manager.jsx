@@ -24,8 +24,6 @@ function AppManager() {
     setLoggedInUser(JSON.parse(storedUser));
     id = loggedInUser.user_id;
 
-    console.log(id);
-    console.log(loggedInUser.user_id);
     getAllUsersExpenses(loggedInUser.user_id)
       .then((response) => {
         setTotalExpensesArr(response.totalExpenses);
