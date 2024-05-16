@@ -63,21 +63,26 @@ function App() {
         /> */}
         <Routes>
           <Route path="*" element={<SignInUpManager />} />
-          <Route
-            path="/home/*"
-            element={
-              <Home
-                setRerenderIncome={setRerenderIncome}
-                rerenderIncome={rerenderIncome}
+          {showHeader ? (
+            <>
+              {" "}
+              <Route
+                path="/home/*"
+                element={
+                  <Home
+                    setRerenderIncome={setRerenderIncome}
+                    rerenderIncome={rerenderIncome}
+                  />
+                }
               />
-            }
-          />
-          <Route path="/analysis/*" element={<Analysis />} />
-          <Route path="/transactions" element={<Transactions />} />
-          <Route
-            path="/budget"
-            element={<Budget idUser={loggedInUser.user_id} />}
-          />
+              <Route path="/analysis/*" element={<Analysis />} />
+              <Route path="/transactions" element={<Transactions />} />
+              <Route
+                path="/budget"
+                element={<Budget idUser={loggedInUser.user_id} />}
+              />{" "}
+            </>
+          ) : null}
         </Routes>
       </UserContext.Provider>
     </>
