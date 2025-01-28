@@ -3,6 +3,7 @@
 ## Overview
 
 "My Money Manager" is a web application designed to empower users with comprehensive control over their finances. The frontend part of this application facilitates users in managing their income, expenses, budgets, and financial analysis through intuitive and interactive interfaces.
+Link to the app: https://mmmanager.netlify.app/
 
 ## Features
 
